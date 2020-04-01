@@ -1,0 +1,9 @@
+<mat-toolbar  color="primary">
+  <mat-toolbar-row class="tbar" >
+    <span class="logo" routerLink="/">ToDoApp</span>
+
+     <mat-button-toggle *ngIf="!isAuthenticated" routerLink="auth">Auth</mat-button-toggle>
+    <mat-button-toggle *ngIf="isAuthenticated" (click)="onLogout()" >Logout</mat-button-toggle>
+  </mat-toolbar-row>
+
+</mat-toolbar>

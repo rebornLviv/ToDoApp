@@ -1,0 +1,8 @@
+
+.tbar{
+  justify-content: space-between;
+}
+
+.logo:hover{
+  cursor: pointer;
+}

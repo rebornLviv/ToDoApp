@@ -1,0 +1,62 @@
+.card-item{
+  margin-top: 10px;
+  width: 250px;
+  height: 200px;
+  border-radius:20px;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+.rr{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+.rr>div{
+  margin: 10px;
+}
+.title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.table{
+  background: orange;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.add{
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.add-task{
+
+  color: green;
+  font-size: 50px;
+
+}
+.add-task:hover{
+  cursor: pointer;
+}
+.deleteTask{
+  color: red;
+  float: right;
+}
+.deleteTask:hover{
+  cursor: pointer;
+}
+.edit:hover{
+  cursor: pointer;
+}
+.txt{
+max-height: 90px;
+  overflow: auto;
+}
+
+.content{
+  height: 65%;
+}

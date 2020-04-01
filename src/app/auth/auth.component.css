@@ -1,0 +1,14 @@
+.mrow{
+
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.lay{
+  width: 400px;
+  height: 250px;
+}
+.btns{
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,76 @@
+<mat-card class="atable">
+<h1 class="title">Add a task</h1>
+  <div class="adata">
+  <form >
+    <div class="row">
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="name">Title</label>
+          <input
+            type="text"
+            id="name"
+            name="title"
+            [(ngModel)]="title"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <mat-form-field  class="matff" color="primary" >
+          <mat-label  class="matf" >Select a status</mat-label>
+          <mat-select  class="matff" placeholder="status..."
+                      [(ngModel)]="status"
+                      name="status"
+          >
+            <mat-option  value="new">
+              new
+            </mat-option>
+            <mat-option value="active">
+              active
+            </mat-option>
+            <mat-option value="blocked">
+              blocked
+            </mat-option>
+          </mat-select>
+            </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea
+            type="text"
+            id="description"
+            class="form-control"
+            name="description"
+            [(ngModel)]="description"
+            rows="6"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="row btns">
+      <div class="col-xs-12 ">
+        <button
+          type="submit"
+          class="btn btn-success"
+          (click)="onAdd()"
+
+        >Add </button>
+
+      </div>
+      <div class="col-xs-12">
+        <button type="button" class="btn btn-danger" routerLink="/">Cancel</button>
+      </div>
+
+    </div>
+  </form>
+  </div>
+</mat-card>

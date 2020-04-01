@@ -1,0 +1,28 @@
+.title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+
+}
+.atable{
+  width: 400px;
+  border-radius: 20px;
+  background: darkgreen;
+  color: white;
+}
+.adata{
+  display: flex;
+  justify-content: center;
+
+}
+.matf{
+  color: white !important;
+}
+.matff {
+  color: white !important;
+}
+::ng-deep .mat-select-value{
+  color: white!important;  }
+.btns{
+justify-content: space-between;
+}

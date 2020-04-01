@@ -1,0 +1,61 @@
+
+<div class="container-fluid">
+
+
+<div class="row">
+
+
+  <div class="col  rr" >
+    <mat-card class="table">
+    <h1 class="title">Tasks</h1>
+    <div class="row">
+
+    <div  *ngFor="let task  of  tasks"  class="col">
+      <mat-card class="card-item" >
+        <mat-icon class="deleteTask" (click)="onDelete(task.id)">close</mat-icon>
+
+
+          <mat-card-title> {{task.title}}</mat-card-title>
+
+        <mat-card-content class="content">
+          <p  class="txt" aria-multiline="true">Desc:  {{task.description}}</p>
+          <p>Status: {{task.status}}</p>
+          <p>   {{   task.shared && task.creator !== cUserEmail ? 'Shared by'  : 'Creator'}}: {{task.creator}}</p>
+        </mat-card-content>
+
+
+
+
+        <mat-card-actions>
+          <mat-icon class="edit"  [routerLink]=" task.id + '/edit'" >edit</mat-icon>
+
+
+          <mat-icon class="edit" (click)="openDialog(task.id)"  >share</mat-icon>
+
+        </mat-card-actions>
+
+
+      </mat-card>
+    </div>
+
+
+
+
+  </div>
+      <mat-icon routerLink="new" class="add-task">add</mat-icon>
+
+    </mat-card>
+  </div>
+  <div class="col add" >
+
+<router-outlet>
+
+</router-outlet>
+  </div>
+
+</div>
+
+
+
+
+</div>
